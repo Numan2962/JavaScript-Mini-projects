@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name = "author" content = "Abdullah Al Numan">
+
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+	<!-- viewport is a meta taq and content attribute indicates how the viewport is going to be described. If we we use 'initial-scale' as 1.0, it will adjust the size of the viewport, it doesn't matter the screen is big or small -->
+
+	<title>Attendence App</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<style type="text/css">
+
+		
+	</style>
+
+</head>
+
+<body>
+  
+  <div class="header">
+    <h2>Attendence App</h2>
+  </div>
+  
+  <div class = "row"> <!-- Main content area -->
+
+		<div class="col-12"></div>
+    
+    <div class="col-3"></div>
+    
+		<div class = "rightbar col-6">
+      		<table align="center">
+				<tr>
+					<th>Sr. No.</th>
+					<th>Name</th>
+					<th>Id</th>
+					<th>Attendence</th>
+				</tr>
+				<tbody id="tabledata">
+
+				</tbody>
+			</table>
+			<br>
+			<button id="subb" class="btn" onclick="showResult()">Submit</button> <!-- showResult() will be called by clicking Submit button -->
+		</div>
+    
+    	<div class="col-3 content">
+    		<table align="center">
+      			<h3 class='result'></h3>
+        	</table>
+   		 </div>
+    
+	</div>
+  
+  <div class="footer">
+    <p>&#169; Copyright 2020 by numan2962. All rights reserved.</p
+  </div>
+  <script src="script.js"></script>   <!-- External Javascript is added -->
+      
+</body>
+
+</html>

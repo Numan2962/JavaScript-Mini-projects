@@ -1,0 +1,91 @@
+
+		*{
+			box-sizing: border-box;		/* margin and padding remains inside the box while seting box-sizing as 'border-box' */
+		}
+
+		body{
+			background-color: #c6cacf;
+		}
+
+		.header{
+			background-color: white;
+			color: black;
+			padding: 5px;     		    /* Space between border and content */
+			text-align: center;
+		}
+
+		.content{
+			background-color: #424d45;
+			padding: 10px;
+			margin: 10% 0 2% 0;
+			color: white;
+			text-align: center;
+			visibility: hidden;
+			border: 1px solid;
+
+  			box-shadow: 5px 10px 28px #888888;
+		}
+
+		table{
+			border-collapse: collapse;	 /* border-collapse property sets whether table borders should collapse into a single border or be separated */
+		}
+
+		table, th, td{
+			border: 1px solid black;  	 /* Without table border, it will not look like a table */
+			padding: 5px 5px;
+		}
+
+		.btn{
+  			text-align: center;
+  			color: black;
+  			cursor: pointer;
+  			outline: none;
+  			border: none;
+  			border-radius: 15px;
+  			box-shadow: 0 2px #999;
+		}
+
+		.btn:active {
+  			background-color: #3e8e41;
+  			box-shadow: 0 2px #666;
+  			transform: translateY(5px);  /* translateY() CSS function repositions an element verticaly */
+			}
+
+		.footer{
+			background-color: #4f4a3f;
+			color: white;	    		/* font color set as white */
+			text-align: center; 		/* text is aligned in center */
+			padding: 5px;
+		}
+
+		.row::after{
+			content: ""; 
+			clear: both;   		/* floating elements are not allowed to float both side of specified element */
+			display: table;
+		}
+
+
+		[class*="col-"]{  		/* all the classes which will start with 'col-' will have the following design */
+			float: left;
+			padding: 10px;	/* space between border and content */
+			width: 100%;
+			text-align: center;
+		}
+
+		/* @media is used to apply different styles for different devices */
+
+		@media only screen and (min-width: 900px) 	/* When the width will 900px or more, arrangement of the content will change */
+		{
+		.col-1{width: 8.33%;}
+		.col-2{width: 16.66%;}
+		.col-3{width: 25%;}
+		.col-4{width: 33.33%;}
+		.col-5{width: 41.66%;}
+		.col-6{width: 50%;}
+		.col-7{width: 58.33%;}
+		.col-8{width: 66.66%;}
+		.col-9{width: 75%;}
+		.col-10{width: 83.33%;}
+		.col-11{width: 91.66%;}
+		.col-12{width: 100%;}
+		}
